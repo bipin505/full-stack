@@ -16,7 +16,7 @@
     "socket.io": "^2.3.0"
   },
   "main": "app.js",
-  "author": "Shibayan Chakraborty",
+  "author": "Bipin Gupta",
   "license": "ISC",
   "description": ""
 }
