@@ -1,0 +1,19 @@
+{
+    "socket_id": {
+        "type": "mixed",
+        "required": true
+    },
+    "name": {
+        "type": "string",
+        "required": true
+    },
+    "owner": {
+        "type": "ObjectId",
+        "ref": "users",
+        "required": true
+    },
+    "participants": [{
+        "type": "ObjectId",
+        "ref": "users"
+    }]
+}

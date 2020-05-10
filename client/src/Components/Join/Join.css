@@ -1,0 +1,37 @@
+input.login {
+    width: 100%;
+    margin-bottom: 20px;
+    height: 20px;
+    border:none;
+    padding: 12px;
+    border-radius: 50px;
+    font-size: 14px;
+}
+
+.joinOuterConatiner {
+    width: 500px;
+    display: block;
+    margin: 0 auto;
+}
+.joinInnerConatiner{
+    position: relative;
+    display: block;
+    height: 100%;
+}
+
+
+.button {
+    /* background-color: #4CAF50; */
+     border: none;
+    color: white;
+    padding: 15px 32px;
+    border-radius: 50px;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #33B3FF;
+    text-transform: uppercase;
+}

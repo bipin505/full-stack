@@ -1,0 +1,59 @@
+{
+    "port": 4000,
+    "services": {
+
+    },
+    "database": {
+        "mongo": {
+            "host": "ds125472.mlab.com",
+            "port": 25472,
+            "database":"chat-app",
+            "user": "admin",
+            "password": "admin123"
+        }
+    },
+    "features": {
+        "headers": {
+            "Content-Security-Policy": {
+                "mode": "report",
+                "default-src": {
+                    "enabled": true,
+                    "default": [
+                        "self"
+                    ],
+                    "additional": []
+                },
+                "script-src": {
+                    "enabled": true,
+                    "default": [
+                        "self"
+                    ],
+                    "additional": [
+                    ]
+                },
+                "style-src": {
+                    "enabled": false,
+                    "nonce-enabled": true,
+                    "default": [
+                        "unsafe-inline"
+                    ],
+                    "additional": []
+                },
+                "img-src": {
+                    "enabled": true,
+                    "default": [
+                        "self"
+                    ],
+                    "additional": []
+                }
+            }
+        },
+        "jwt": {
+            "signature": "bipin",
+            "excluded": [
+                "/api/v1/healthcheck",
+                "/api/v1/auth/login"
+            ]
+        }
+    }
+}

@@ -1,0 +1,71 @@
+.outerContainer{
+    height: 375px;
+    border: 1px solid #000;
+    background-color: #fff;
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+}
+.innercontainer{
+    position: relative;
+    display: block;
+    height: 100%;
+}
+.left{
+    float: left;
+}
+.left span, .message span{
+    margin-right: 12px;
+}
+.user{
+    font-size: 10px;
+    color: #cecece;
+}
+
+.messageText{
+    border: 1px solid #c0c0c0;
+    padding: 2px 10px;
+    border-radius: 50px;
+    margin-bottom: 4px;
+    float: left;
+}
+.messageText.sender{
+    background-color: bisque;
+}
+.message{
+    margin-bottom: 4px;
+}
+.message.sender{
+    float: right;
+    clear: both;
+}
+.message.reciever{
+    float: left;
+    clear: both;
+}
+.message.sender span:last-child{
+    display: none;
+}
+.message.reciever span:last-child{
+    display: block;
+}
+.messageContainer{
+    height: 200px;
+    overflow: auto;
+    padding: 10px;
+    margin: 0;
+}
+.messageText.reciever{
+    background-color: cadetblue;
+    clear: both;
+}
+.right{
+    float: right;
+}
+.messageInput{
+    position: absolute;
+    bottom: 0;
+    border: 1px solid #c0c0c0;
+    width: 90%;
+    padding: 15px;
+}
